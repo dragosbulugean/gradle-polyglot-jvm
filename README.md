@@ -1,0 +1,1 @@
+A barebone Gradle project with support for Intellij IDEA, Java, Scala, and Groovy.
