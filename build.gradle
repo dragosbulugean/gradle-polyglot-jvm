@@ -1,0 +1,22 @@
+group 'com.aiurlabs'
+version '0.1'
+
+apply plugin: 'idea'
+apply plugin: 'java'
+apply plugin: 'scala'
+apply plugin: 'groovy'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.scala-lang:scala-compiler:2.11.7'
+    compile 'org.scala-lang:scala-reflect:2.11.7'
+    compile 'org.scala-lang:scala-library:2.11.7'
+    compile 'org.codehaus.groovy:groovy-all:2.4.6'
+}
+
+tasks.withType(ScalaCompile) {
+    targetCompatibility = "1.7"
+}
